@@ -9,25 +9,22 @@ const FBIWanted = () => {
   useEffect(() => {
     const apiUrl = 'https://api.fbi.gov/wanted/v1/list';
 
-    // Make the API request using Axios
     axios
       .get(apiUrl)
       .then((response) => {
-        // Handle the API response data here
+        //We handle the API response data here
         setWantedList(response.data.items);
         setLoading(false);
         console.log(response.data.items);
       })
       .catch((error) => {
-        // Handle any errors here
+        //We Handle errors here
         console.error('Error fetching data:', error);
         setLoading(false);
       });
   }, []);
   const handleButtonClick = () => {
-    // Check if the URL is defined and not empty
     if (url) {
-      // Redirect the user to the specified URL
       window.location.href = url;
     }
   };
