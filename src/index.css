@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.gradient-background {
+  background: rgb(14,24,43);
+  background: linear-gradient(180deg, rgba(14,24,43,1) 48%, rgba(8,25,22,1) 100%);
+}
+
+.gradient-divisions {
+  background: rgb(8,25,22);
+background: linear-gradient(180deg, rgba(8,25,22,1) 6%, rgba(22,38,73,1) 44%, rgba(28,43,92,1) 100%);
+}
+
+.divisions-background {
+  background-image: url('./images/divisions/divisions-bg.jpg'); 
+
+}
+
+.card-background {
+  background-image: url('./images/action/pattern.jpg');
+}
+
+.section-grad {
+  background: rgb(24,39,87);
+  background: linear-gradient(180deg, rgba(24,39,87,1) 10%, #2f3441 100%);
+}
+
+.action-background {
+  background: rgb(48,53,66);
+  background: -moz-linear-gradient(180deg, rgba(48,53,66,1) 37%, rgba(36,37,41,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(48,53,66,1) 37%, rgba(36,37,41,1) 100%);
+  background: linear-gradient(180deg,#2f3441 37%, #242529 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#303542",endColorstr="#242529",GradientType=1);
+}
+
+.fullBox:hover + .content-box {
+  display: none;
+}
+.fullBox:hover + .imgBox {
+  width:200px;
+  height: 200px;
+}
+
+.wanted-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .wanted-cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .wanted-cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+.hovered {
+
+}
+
+.footer {
+  background: rgb(36,37,41);
+  background: -moz-linear-gradient(180deg, rgba(36,37,41,1) 27%, rgba(18,19,20,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(36,37,41,1) 27%, rgba(18,19,20,1) 100%);
+  background: linear-gradient(180deg, rgba(36,37,41,1) 27%, rgba(18,19,20,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242529",endColorstr="#121314",GradientType=1);
+}
