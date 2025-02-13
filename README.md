@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 !!!!!!
-If you re having problems running starting, rename "FBIwebPage-my-project" to "my-project"
+If you re having problems running the code, rename "FBIwebPage-my-project" to "my-project"
 !!!!!!
 
 
