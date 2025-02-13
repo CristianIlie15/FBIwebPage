@@ -7,7 +7,7 @@ const divisionsData = [
   {
     title: 'Behavioral Analysis Unit',
     description: "The BAU is often depicted in popular culture, such as in TV shows like 'Criminal Minds' It's responsible for profiling and analyzing the behavior of serial criminals and providing insights to help law enforcement agencies apprehend them. This division delves into the psychology and motivations of criminals, making it a captivating area for those interested in criminal psychology and understanding the minds of serial offenders.",
-    imageSrc: Img1, // Replace with actual image source
+    imageSrc: Img1, 
   },
   {
     title: 'Cyber Division',
